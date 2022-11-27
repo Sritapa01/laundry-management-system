@@ -15,7 +15,7 @@ public class ConnectionProvider {
             return DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/laundrydb",
                     "root",
-                    "123456");
+                    "system");
         } catch (Exception e) {
             e.printStackTrace();
             return null;
