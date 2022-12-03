@@ -27,6 +27,7 @@
 
 <body>
 <div class="main-form">
+
     <h2>Raise New Laundry Request</h2>
     <form action="new-request" method="post">
         <input type="hidden" name="id" value="<%=id%>">
@@ -74,6 +75,9 @@
             <input type="submit" value="Submit">
         </div>
     </form>
+    <div class="extra-links">
+            <a href="./user-dashboard.jsp">Go back to dashboard</a>
+        </div>
 </div>
 </body>
 

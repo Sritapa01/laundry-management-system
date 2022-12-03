@@ -34,7 +34,7 @@ public class NewRequestAction extends HttpServlet {
         int totalNumberOfCloths = shirt + tShirt + bottomWear + woolenWear + bedsheets + others;
         if(totalNumberOfCloths < 1){
             req.getSession().setAttribute("error", "Please select number of cloths");
-            req.getRequestDispatcher("new-requests.jsp").forward(req, resp);
+            req.getRequestDispatcher("user-dashboard.jsp").forward(req, resp);
         }
         else {
             Integer totalAmount = shirt * priceChartRepo.getPriceByTypeOfCloth("Shirt")
